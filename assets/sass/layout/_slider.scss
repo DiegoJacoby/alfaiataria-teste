@@ -1,0 +1,123 @@
+section#slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+
+	.item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		z-index: 1;
+		opacity: 0;
+		
+		&.ativo{
+			position: relative;
+			z-index: 2;
+			opacity: 1;
+		}
+
+		.conteudo {
+			position: absolute;
+			left: 60%;
+			top: 40%;
+			max-width: 365px;
+			color: #fff;
+
+			h2 {
+				color: #fff;
+				font-size: 8em;
+				margin-bottom: 0.5em;
+				line-height: 0.8;
+			}
+
+			p {
+				color: #fff;
+				font-size: 1.6em;
+			}
+		}
+
+		&.item1 {
+			background-image: url(../images/slider-01.jpg);
+		}
+
+		&.item2 {
+			background-image: url(../images/slider-02.jpg);
+		}
+
+		&.item3 {
+			background-image: url(../images/slider-03.jpg);
+		}
+	}
+
+	a.ancora {
+		position: absolute;
+		z-index: 3;
+		bottom: 10%;
+		left: 50%;
+		width: 33px;
+		height: 29px;
+		margin-left: -16px;
+		background-image: url(../images/ancora.png);
+		display: block;
+		@extend .opacidade;
+	}
+
+	.bullets {
+		position: absolute;
+		bottom: 20%;
+		left: 60%;
+		z-index: 3;
+		width: auto;
+
+		a.seta {
+			width: 23px;
+			height: 39px;
+			background-image: url(../images/setas.png);
+			background-position: -24px 0;
+			display: inline-block;
+			@extend .opacidade;
+
+			&.menos {
+				background-position: 0 0;
+			}
+		}
+
+		ul {
+			list-style: none;
+			display: inline-block;
+		    vertical-align: top;
+		    margin: 15px 20px 0;
+
+			li {
+				display: inline-block;
+				margin: 0 20px;
+
+				a {
+					width: 11px;
+					height: 11px;
+					background: #fff;
+					border-radius: 50%;
+					display: block;
+					text-indent: -9999px;
+					opacity: 0.5;
+					transition: opacity 300ms;
+
+					&:hover {
+						opacity: 1;
+					}
+				}
+
+				&.ativo {
+					a {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

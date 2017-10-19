@@ -1,0 +1,28 @@
+.container {
+	width: 100%;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Declarando essa classe para reaproveitamento de efeito no over */
+.opacidade {
+	transition: opacity 500ms;
+
+	&:hover {
+		opacity: 0.7;	
+	}
+}
+
+section {
+	h2 {
+		color: $marrom;
+		font-size: 5em;
+		font-weight: bold;
+		font-family: $arial-bold;
+		line-height: 1;
+	}
+	p {
+		font-family: $times;
+	}
+}

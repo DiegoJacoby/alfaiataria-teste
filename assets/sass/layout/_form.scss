@@ -1,0 +1,100 @@
+section#contato {
+	width: 100%;
+	position: relative;
+	display: table;
+	padding: 55px 0 100px 0;
+	background: $marrom;
+
+	h2 {
+		color: #fff;
+	}
+
+	form {
+		width: 79.66%;
+		position: relative;
+		display: table;
+		margin: 0 auto;
+		margin-top: 35px;
+
+		span {
+			position: relative;
+			display: block;
+			margin-bottom: 30px;
+		}
+
+		input, textarea {
+			width: 100%;
+			background: $marrom;			
+			border: 3px solid #d1cbcb;
+			padding: 25px 0 25px 35px;
+			outline: none;
+			font-size: 1.4em;
+			color: #d3cccc;
+			font-style: italic;
+
+			&::-webkit-input-placeholder {
+				color: inherit;
+			}
+			::-moz-placeholder {
+				color: inherit;
+			}
+			:-ms-input-placeholder {
+				color: inherit;
+			}
+			:-moz-placeholder {
+				color: inherit;
+			}
+
+			&:last-of-type {
+				margin-bottom: 10px;
+			}
+		}
+
+		textarea {
+			height: 230px;
+			resize: none;
+			font-family: inherit;
+		}
+
+		input[type="submit"] {
+			width: 96px;
+			float: right;
+			padding: 12px 0;
+			font-style: normal;
+			margin-bottom: 0;
+			text-transform: lowercase;
+			cursor: pointer;
+			transition: all 500ms;
+			
+			&:hover {
+				background: #fff;
+				color: $marrom;
+				border: 3px solid #fff;
+			}
+		}
+
+		label.error {
+		    position: absolute;
+		    padding: 13px 8px 15px 8px;
+		    background-color: #ffffff;
+		    text-align: center;
+		    top: -35px;
+		    right: 50px;
+		    color: $marrom;
+		    font-size: 1.2em;
+
+		    &:after {
+		    	content: '';
+			    position: absolute;
+			    right: 50%;
+			    bottom: -10px;
+			    margin-left: -10px;
+			    height: 0px;
+			    vertical-align: middle;
+			    border-top: 10px solid #fff;
+			    border-left: 10px solid transparent;
+			    border-right: 10px solid transparent;
+		    }
+		}
+	}
+}
