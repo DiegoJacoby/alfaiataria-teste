@@ -1,0 +1,197 @@
+@media all and (device-width: 1024px) and (device-height: 1366px) {
+	section#projetos-em-destaque .item {
+		margin: 42px 49px 0 0;
+
+		.hover {
+			opacity: 1;
+
+			a {
+	    		margin-bottom: 110px;
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	header nav.menu-principal {
+		margin: 5px 0 0 10%;
+	}
+
+	section#projetos-em-destaque .item .hover {
+		opacity: 1;
+
+		a {
+			margin-top: 100px;
+    		margin-bottom: 110px;
+		}
+	}
+}
+	
+@media(max-width: 767px) {
+	section h2 {
+		font-size: 4em;
+		text-align: center;
+	}
+
+	header {
+		.menu-mobile {
+			display: block;
+			float: left;
+			margin-top: -13px;
+		}
+		
+		h1 {
+		    position: absolute;
+		    top: -12px;
+		    left: 50%;
+			width: 155px;
+			margin: 0;
+		    margin-left: -75px;
+		}
+
+		nav.menu-principal {
+			display: none;
+			margin: 10px 0 0 0;
+			clear: both;
+
+			ul li {
+				display: block;
+				margin: 0 0 5px 0;
+				font-size: 1.6em;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		nav.menu-idiomas {
+			ul {
+				padding: 25px 0;
+
+				li {
+					font-size: 1.8em;
+
+					a {
+						padding: 0 5px 0 0;
+					}
+				}
+			}
+		}
+	}
+
+	section#slider {
+		.item .conteudo {
+			position: relative;
+		    left: auto;
+		    top: 25%;
+		    margin: 0 auto;
+		    text-align: center;
+		    padding: 0 10%;
+
+			h2 {
+				font-size: 4em;
+				text-align: center;
+				margin-bottom: 2em;
+			}
+
+			p {
+				text-align: center;
+			}
+		}
+
+		.bullets {
+			position: relative;
+		    left: auto;
+		    bottom: auto;
+		    margin: -40% auto 0;
+		    text-align: center;
+		}
+
+		a.ancora {
+			bottom: 5%;
+		}
+	}
+
+	section#o-que-fazemos .item {
+		width: 100%;
+		float: none;
+		margin: 50px 0 0 0;
+
+		p {
+			text-align: center;
+		}
+	}
+
+	section#projetos-em-destaque {
+		background: linear-gradient(to left, #fff 0%, #fff 5%, #f0f0f0 5%, #f0f0f0 95%, #fff 95%, #fff 100%);
+
+		.container {
+			padding: 0;
+		}
+
+		.item {
+			width: 100%;
+			float: none;
+			margin: 20px 35px 0 0;
+
+			&:first-of-type {
+				margin-top: 40px;
+			}
+
+			.hover {
+
+				a {
+					margin-top: 155px;
+		    		margin-bottom: 125px;
+				}
+
+				p {
+					width: 80%;
+				}
+			}
+		}
+
+		.item.projeto-01, .item.projeto-02, .item.projeto-03 {
+			background-size: cover;
+		}
+	}
+
+	section#contato form {
+		margin-top: 45px;
+
+		input, textarea {
+			padding: 16px 15px;
+		}
+
+		label.error {
+			right: -30px;
+		}
+	}
+
+	footer {
+		padding: 50px 0 50px 0;
+
+		nav {
+			float: none;
+
+			ul li {
+				display: block;
+				margin: 0 0 25px 0;
+				text-align: center;
+				font-size: 2.2em;
+				
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		ul.social {
+			float: none;
+			text-align: center;
+			margin-top: 60px;
+		}
+	}
+}
+

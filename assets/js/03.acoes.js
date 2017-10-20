@@ -1,4 +1,6 @@
 jQuery(document).ready(function($) {
+
+	//Slider
 	function slider() {
 		var sliderEl = $('section#slider');
 
@@ -83,7 +85,7 @@ jQuery(document).ready(function($) {
 	}
 	slider();
 
-
+	//Validação do formulário utilizando JQuery
 	$('#form-contato').validate({
 		rules: {
 			nome: 'required',
@@ -105,5 +107,20 @@ jQuery(document).ready(function($) {
 			assunto: 'Por favor, insira o assunto',
 			mensagem: 'Por favor, insira sua mensagem'
 		}
+	});
+
+	// Efeito clique ancora
+	$('section#slider a.ancora, header .menu-principal a, footer nav a').click(function(event) {
+		event.preventDefault();
+
+		var scrollar = $($(this).attr('href')).offset().top;
+		$('html, body').animate({scrollTop: scrollar}, 700);
+	});
+
+	//Menu Mobile
+	$('.menu-mobile').click(function(event) {
+		event.preventDefault();
+		
+		$('header nav.menu-principal').slideToggle();
 	});
 });

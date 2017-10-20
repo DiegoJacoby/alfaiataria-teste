@@ -10,6 +10,7 @@
 <body>
 	<header>
 		<div class="container">
+			<img class="menu-mobile" src="dist/images/menu-mobile.png" alt="Menu Mobile">
 			<h1>
 				<a href="#">
 					<img src="dist/images/logo-alfaiataria-digital.png" alt="Logo Alfaiataria Digital">
@@ -17,9 +18,9 @@
 			</h1>
 			<nav class="menu-principal">
 				<ul>
-					<li><a href="#">O que fazemos</a></li>
-					<li><a href="#">Projetos</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#o-que-fazemos">O que fazemos</a></li>
+					<li><a href="#projetos-em-destaque">Projetos</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
 			<nav class="menu-idiomas">
@@ -58,21 +59,21 @@
 			<a href="" class="seta mais"></a>
 		</div>
 		
-		<a href="#" class="ancora"></a>
+		<a href="#o-que-fazemos" class="ancora"></a>
 	</section>
 
 	<section id="o-que-fazemos" class="container">
 		<h2>O que<br>fazemos</h2>
 		<div class="item">
-			<img src="dist/images/item-01.png">
+			<img src="dist/images/item-01.png" alt="Bandeira">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
 		</div>
 		<div class="item">
-			<img src="dist/images/item-02.png">
+			<img src="dist/images/item-02.png" alt="Xícara">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
 		</div>
 		<div class="item">
-			<img src="dist/images/item-03.png">
+			<img src="dist/images/item-03.png" alt="Estrela">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
 		</div>
 	</section>
@@ -112,8 +113,8 @@
 				<span><input type="email" name="email" placeholder="email" required></span>
 				<span><input type="tel" name="tel" placeholder="telefone" required></span>
 				<span><input type="text" name="assunto" placeholder="assunto" required></span>
-				<span><textarea placeholder="mensagem" required></textarea></span>
-				<span><input type="submit" name="enviar" placeholder="enviar"></span>
+				<span><textarea placeholder="mensagem" name="mensagem" required></textarea></span>
+				<span><input type="submit" name="enviar" value="enviar"></span>
 			</form>
 		</div>
 	</section>
@@ -122,9 +123,9 @@
 		<div class="container">
 			<nav>
 				<ul>
-					<li><a href="#">O que fazemos</a></li>
-					<li><a href="#">Projetos</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#o-que-fazemos">O que fazemos</a></li>
+					<li><a href="#projetos-em-destaque">Projetos</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
 			<ul class="social">
@@ -134,7 +135,7 @@
 			</ul>
 		</div>
 	</footer>
-
+	
 	<script src="dist/js/dist.min.js"></script>
 </body>
 </html>

@@ -5,6 +5,10 @@ header {
 	top: 40px;
 	z-index: 3;
 
+	.menu-mobile {
+		display: none;
+	}
+
 	h1 {
 		float: left;
 	}
@@ -55,7 +59,6 @@ header {
 				text-align: center;
 				color: #fff;
 				display: inline-block;
-				@extend .opacidade;
 
 				&:first-of-type {
 					a {

@@ -20,13 +20,17 @@ section#contato {
 			position: relative;
 			display: block;
 			margin-bottom: 30px;
+
+			&:last-of-type {
+				margin: -20px 0 0 0;
+			}
 		}
 
 		input, textarea {
 			width: 100%;
 			background: $marrom;			
 			border: 3px solid #d1cbcb;
-			padding: 25px 0 25px 35px;
+			padding: 16px 35px;
 			outline: none;
 			font-size: 1.4em;
 			color: #d3cccc;
@@ -44,21 +48,19 @@ section#contato {
 			:-moz-placeholder {
 				color: inherit;
 			}
-
-			&:last-of-type {
-				margin-bottom: 10px;
-			}
 		}
 
 		textarea {
 			height: 230px;
 			resize: none;
 			font-family: inherit;
+			overflow: auto;
 		}
 
 		input[type="submit"] {
 			width: 96px;
 			float: right;
+			font-size: 1.6em;
 			padding: 12px 0;
 			font-style: normal;
 			margin-bottom: 0;
